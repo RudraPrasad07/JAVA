@@ -2,7 +2,7 @@ Spring Framework provides a vast array of annotations that span across its core,
 
 
 Spring Core Annotations:
-
+------------------------
 1.  @Component: Marks a class as a Spring-managed component.
 2.  @Service: Specialization of `@Component` for service layer classes.
 3.  @Repository: Specialization of `@Component` for DAO (Data Access Object) classes.
@@ -26,7 +26,8 @@ Spring Core Annotations:
 21. @Import: Imports additional configuration classes.
 22. @ImportResource: Imports XML configuration files.
 
-Spring Data Annotations
+Spring Data Annotations:
+------------------------
 23. @Entity: Marks a class as a JPA entity.
 24. @Table: Specifies the table name in the database for the entity.
 25. @Id: Marks a field as the primary key.
@@ -48,7 +49,7 @@ Spring Data Annotations
 
 
 Spring Web Annotations:
-
+-----------------------
 41. @RequestMapping: Maps HTTP requests to handler methods of MVC and REST controllers.
 42. @GetMapping: Shortcut for `@RequestMapping` with the HTTP GET method.
 43. @PostMapping: Shortcut for `@RequestMapping` with the HTTP POST method.
@@ -68,8 +69,8 @@ Spring Web Annotations:
 57. @RestControllerAdvice: Combines `@ControllerAdvice` and `@ResponseBody` to handle exceptions across RESTful services.
 58. @ControllerAdvice: Allows global handling of exceptions, data binding, etc., across multiple controllers.
 
-Spring AOP Annotations
-
+Spring AOP Annotations:
+-----------------------
 59. @Aspect: Marks a class as an aspect (a modularization of a concern that cuts across multiple classes).
 60. @Before: Executes an advice before a method execution.
 61. @After: Executes an advice after a method execution.
@@ -80,7 +81,7 @@ Spring AOP Annotations
 66. @EnableAspectJAutoProxy: Enables support for handling components marked with `@Aspect`.
 
 Spring Integration and Event Annotations:
-
+-----------------------------------------
 67. @EventListener: Marks a method as an event listener, handling specific events.
 68. @EnableScheduling: Enables Spring's scheduled task execution capability.
 69. @Scheduled: Marks a method to be scheduled to run at fixed intervals or cron expressions.
@@ -93,7 +94,7 @@ Spring Integration and Event Annotations:
 
 
 Spring Boot Annotations:
-
+-----------------------
 76. @SpringBootApplication: Combines `@Configuration`, `@EnableAutoConfiguration`, and `@ComponentScan` to simplify Spring Boot configuration.
 77. @EnableAutoConfiguration: Enables Spring Boot’s auto-configuration mechanism.
 78. @SpringBootTest: Indicates that the application context should be loaded for integration tests.

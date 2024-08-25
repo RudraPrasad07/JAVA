@@ -1,14 +1,14 @@
 Hibernate, a popular Java framework for object-relational mapping (ORM), provides several annotations that are used to map Java classes to database tables, and class fields to table columns. Below are some of the key Hibernate annotations, organized by their purpose:
 
  1. Entity-Level Annotations:
-
+------------------------------
    - @Entity: Marks a class as a Hibernate entity, meaning it is mapped to a database table.
    - @Table: Specifies the table in the database with which the entity is associated. This annotation is optional if the table name matches the entity name.
      - name: Specifies the name of the table.
      - schema: Specifies the schema of the table.
      
  2. Primary Key Annotations:
-
+------------------------------
    - @Id`: Marks a field as the primary key of the entity.
    - @GeneratedValue: Specifies how the primary key value is generated. Strategies include:
      - GenerationType.IDENTITY: Relies on an auto-increment column in the database.
@@ -19,7 +19,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
    - @TableGenerator: Defines a primary key generator using a database table.
 
  3. Column-Level Annotations:
-
+------------------------------
    - @Column: Maps a field to a specific column in the database table. Allows customization of column attributes.
      - name: Specifies the column name.
      - nullable: Defines whether the column can be `null`.
@@ -33,7 +33,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
    - @Transient: Specifies that a field is not persistent and should not be mapped to any database column.
 
 4. Relationship Annotations:
-
+------------------------------
    - @OneToOne: Specifies a one-to-one relationship between two entities.
      - mappedBy: Used in the non-owning side of the relationship to specify the owning entity’s field name.
      - cascade: Defines cascade operations to be applied to the related entity.
@@ -50,7 +50,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
    - @JoinTable: Specifies the table for the join in many-to-many relationships.
 
 5. Inheritance Annotations:
-
+------------------------------
    - @Inheritance: Defines the inheritance strategy for entities.
      - InheritanceType.SINGLE_TABLE: Maps all classes to a single table.
      - InheritanceType.JOINED: Maps each class to its own table, with relationships between tables.
@@ -59,7 +59,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
    - @DiscriminatorValue: Defines the value used in the discriminator column for a specific entity.
 
  6. Additional Annotations:
-
+------------------------------
    - @Embedded: Marks an embeddable class.
    - @Embeddable: Marks a class whose fields are part of the entity it is embedded in.
    - @EmbeddedId: Marks a composite primary key class that is embeddable.

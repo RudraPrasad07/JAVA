@@ -9,7 +9,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
      
  2. Primary Key Annotations:
 ------------------------------
-   - @Id`: Marks a field as the primary key of the entity.
+   - @Id: Marks a field as the primary key of the entity.
    - @GeneratedValue: Specifies how the primary key value is generated. Strategies include:
      - GenerationType.IDENTITY: Relies on an auto-increment column in the database.
      - GenerationType.SEQUENCE: Uses a database sequence to generate unique values.
@@ -40,7 +40,7 @@ Hibernate, a popular Java framework for object-relational mapping (ORM), provide
      - fetch: Specifies the fetching strategy (`EAGER` or `LAZY`).
    - @OneToMany: Specifies a one-to-many relationship between entities.
      - mappedBy: Used in the non-owning side of the relationship to specify the owning entity’s field name.
-   - **`@ManyToOne`**: Specifies a many-to-one relationship.
+   - @ManyToOne: Specifies a many-to-one relationship.
      - cascade: Defines cascade operations.
      - fetch: Specifies the fetching strategy.
    - @ManyToMany: Specifies a many-to-many relationship.
